@@ -1,0 +1,8 @@
+.env
+dist
+node_modules
+.eliza
+
+CLAUDE.md
+
+src/__tests__

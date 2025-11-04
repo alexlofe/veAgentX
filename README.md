@@ -59,3 +59,4 @@ Customize your project by modifying:
 
 - `src/index.ts` - Main entry point
 - `src/character.ts` - Character definition
+- `vechain/` - VeChain tooling. Use SDK to interact with onchain data

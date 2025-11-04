@@ -6,3 +6,8 @@ node_modules
 CLAUDE.md
 
 src/__tests__
+nul
+
+.dockerignore
+docker-compose.yml
+Dockerfile

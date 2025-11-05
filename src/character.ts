@@ -3,36 +3,34 @@ import type { Character } from "@elizaos/core";
 export const character: Character = {
   name: "veAgentX",
   plugins: [
-    // core
     "@elizaos/plugin-sql",
     '@elizaos/plugin-bootstrap',
     "@elizaos/plugin-openai",
-    "@elizaos/plugin-twitter",
+    // "@elizaos/plugin-twitter",
   ],
   settings: {
     secrets: {
       // twitter credentials (read+write app perms on the bot account)
-      TWITTER_API_KEY: process.env.TWITTER_API_KEY,
-      TWITTER_API_SECRET_KEY: process.env.TWITTER_API_SECRET_KEY,
-      TWITTER_ACCESS_TOKEN: process.env.TWITTER_ACCESS_TOKEN,
-      TWITTER_ACCESS_TOKEN_SECRET: process.env.TWITTER_ACCESS_TOKEN_SECRET,
+      // TWITTER_API_KEY: process.env.TWITTER_API_KEY,
+      // TWITTER_API_SECRET_KEY: process.env.TWITTER_API_SECRET_KEY,
+      // TWITTER_ACCESS_TOKEN: process.env.TWITTER_ACCESS_TOKEN,
+      // TWITTER_ACCESS_TOKEN_SECRET: process.env.TWITTER_ACCESS_TOKEN_SECRET,
 
-      // reply/mention-only mode: disable posting, actions, discovery, timeline
-      TWITTER_POST_ENABLE: "false",
-      TWITTER_SEARCH_ENABLE:true,
-      TWITTER_POST_IMMEDIATELY: "false",
-      TWITTER_ENABLE_REPLIES: "true",
-      TWITTER_ENABLE_ACTIONS: "false",
-      TWITTER_ENABLE_DISCOVERY: "false",
-      TWITTER_AUTO_RESPOND_MENTIONS:true,
-      TWITTER_AUTO_RESPOND_REPLIES:true,
+      // // reply/mention-only mode: disable posting, actions, discovery, timeline
+      // TWITTER_POST_ENABLE: "false",
+      // TWITTER_SEARCH_ENABLE:false,
+      // TWITTER_POST_IMMEDIATELY: "false",
+      // TWITTER_ENABLE_REPLIES: "true",
+      // TWITTER_ENABLE_ACTIONS: "false",
+      // TWITTER_ENABLE_DISCOVERY: "false",
+      // TWITTER_AUTO_RESPOND_MENTIONS:true,
+      // TWITTER_AUTO_RESPOND_REPLIES:false,
 
-      // keep intervals large if your version reads them
-      TWITTER_POST_INTERVAL_MIN: "180",
-      TWITTER_POST_INTERVAL_MAX: "360",
+      // // keep intervals large if your version reads them
+      // TWITTER_POST_INTERVAL_MIN: "180",
+      // TWITTER_POST_INTERVAL_MAX: "360",
     },
-    customActions: ["VECHAIN_WALLET_BALANCE"],
-    avatar: "https://elizaos.github.io/eliza-avatars/Eliza/portrait.png",
+    avatar: "C:\Users\alexl\Documents\GitHub\veAgentX\veAgentX.jpg",
   },
   system:
     "Respond to all messages in a helpful, conversational manner. Provide assistance on a wide range of topics, using knowledge when needed. Be concise but thorough, friendly but professional. Use humor when appropriate and be empathetic to user needs. Provide valuable information and insights when questions are asked.",

@@ -1,9 +1,7 @@
 import { ThorClient } from "@vechain/sdk-network";
 
-const VECHAIN_NETWORK = process.env.VECHAIN_NETWORK;
-
-export async function getAccountBalances(address, rpcUrl = VECHAIN_NETWORK) {
-  const thor = ThorClient.at(rpcUrl);
+export async function getAccountBalances(address, network = process.env.VECHAIN_NETWORK) {
+  const thor = ThorClient.at(network);
 
   const account = await thor.accounts.getAccount(address);
 

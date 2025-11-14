@@ -20,7 +20,7 @@ This is the starter template AI Agent for Eliza x VeChain.
 
 
 ```bash 
-# prereqs: Node 18+ and bun installed
+# prereqs: Node v22 and bun installed
 bun i -g @elizaos/cli
 elizaos --version
 
